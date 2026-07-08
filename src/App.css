@@ -1,0 +1,531 @@
+body {
+    /* background-color: #0d0f12; */
+    background-color: aliceblue;
+    /* color: white; */
+}
+
+/* .loginpg{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url("/schoolbg.png");
+    
+} */
+
+.loginpg {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* background layer */
+.loginpg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("/schoolbg.png") center/cover no-repeat;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+
+
+.loginInnerpg {
+    /* background-color: #111113; */
+    /* background: radial-gradient(black, rgb(151, 148, 148)); */
+    background: radial-gradient(rgb(50, 43, 43), rgb(140, 199, 244));
+    color: white;
+    display: flex;
+    padding: 50px;
+    border-radius: 20px;
+    gap: 30px;
+    flex-direction: column;
+
+}
+
+.loginInnerpg div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+
+}
+
+.loginInnerpg input {
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 1rem;
+    border: none;
+    /* gap: 30px; */
+    /* flex-direction: column; */
+
+}
+
+.loginInnerpg button {
+    transition: 400ms linear;
+    cursor: pointer;
+
+}
+
+.loginInnerpg button:hover {
+    transform: scale(1.05);
+    background-color: green;
+
+}
+
+.main {
+    margin-top: 70px;
+}
+
+.nav {
+    display: flex;
+    opacity: 0.9;
+    border: 0.1px solid gray;
+    /* background-color: rgb(59, 103, 143); */
+    background-color: #1b1f27;
+    color: rgb(226, 221, 221);
+    height: 70px;
+    align-items: center;
+    font-size: 1.2rem;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+
+}
+
+.name {
+    color: rgb(196, 255, 1);
+    width: 250px;
+    /* border: 1px solid gray; */
+
+    /* font-size: 1.5rem; */
+    margin-left: 20px;
+}
+
+.name p {
+    color: gray;
+    font-size: 0.8rem;
+}
+
+.list {
+    height: 100%;
+    display: flex;
+    /* width: 100%; */
+    flex: 1;
+    /* justify-content: space-between; */
+}
+
+.listEnter {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    /* border-left: 2px solid white; */
+    /* opacity: 0.5; */
+}
+
+.listEnter:hover {
+    cursor: pointer;
+    background-color: rgb(31, 49, 66);
+    /* opacity: 1; */
+}
+
+.listView:hover {
+    cursor: pointer;
+    background-color: rgb(31, 49, 66);
+    /* opacity: 1; */
+}
+
+.listView {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    /* border-left: 2px solid black; */
+    opacity: 0.3;
+}
+
+.login button {
+    background-color: rgb(90, 87, 87);
+    border: none;
+    display: flex;
+    /* margin-right: 80px; */
+    margin: 40px;
+    padding: 10px 20px;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.login button:hover {
+    background-color: rgb(145, 144, 144);
+    /* background:radial-gradient(rgb(192, 226, 247),gray) ; */
+
+    color: white;
+
+}
+
+.loginLogo svg {
+    height: 25px;
+}
+
+
+.enter {
+    /* margin-top: 20px; */
+    display: flex;
+    height: 94vh;
+
+
+    /* display: none; */
+}
+
+.sidebar {
+    height: 100%;
+    width: max(20vw, 150px);
+}
+
+.buttons {
+    position: relative;
+    height: 100%;
+    /* background-color:#1b1f25; */
+    overflow: hidden;
+    /* background-color: #1b1f27; */
+    background: linear-gradient( #1b1f27, #021c4c);
+
+    border: 1px solid gray;
+    border-bottom: none;
+    /* background-color: rgb(69, 69, 2); */
+
+    display: flex;
+    flex-direction: column;
+    width: max(20vw, 150px);
+    /* width: max(250px,25vw); */
+    /* padding: 10px; */
+    /* background-color: rgb(0, 0, 0); */
+    /* box-shadow: 0 0 10px rgb(9, 5, 32); */
+}
+
+.btnheader {
+    color: rgb(3, 250, 24);
+    padding-top: 45px;
+    text-align: center;
+
+}
+
+.button {
+    margin: 10px;
+    padding: 8px;
+    /* color: rgb(0, 0, 0); */
+    color: rgb(248, 242, 242);
+    /* border: 0px solid transparent; */
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 1.1rem;
+    /* border: 2px solid rgb(132, 129, 129); */
+    /* border-radius: 2rem; */
+    /* background-color:rgb(215, 210, 210) ; */
+    /* border: none; */
+    transition: 500ms ease;
+    cursor: pointer;
+}
+
+/* .student{
+    background-color: gray;
+} */
+
+.btnActive {
+    background-color: rgb(69, 69, 2);
+    color: yellow;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    background-color: rgb(1, 18, 36);
+}
+
+.admin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    padding: 3px;
+    width: inherit;
+    /* width: ; */
+
+    color: gray;
+    font-size: 0.8rem;
+    /* border: 1px solid gray; */
+}
+
+.adminLogo {
+    background: radial-gradient(rgb(20, 173, 220), rgb(213, 235, 135));
+    padding: 10px;
+    margin: 5px;
+    color: black;
+    border-radius: 50%;
+}
+
+.adminName {
+    color: rgb(255, 254, 254);
+}
+
+.formCard {
+    display: flex;
+    /* flex-direction: column; */
+    margin: 5vw;
+    /* margin: 30px; */
+    border: 1px solid gray;
+    padding: 30px;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    border-radius: 20px;
+    /* width: 80%; */
+    flex: 1;
+    /* height: 100%; */
+    /* background-color: rgb(238, 237, 237); */
+    background-color: rgba(57, 132, 197, 0.158);
+    box-shadow: 10px 20px 20px rgb(89, 93, 95);
+    justify-content: center;
+    align-items: center;
+    color:black;
+
+}
+
+.form {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    /* display: inline; */
+    /* width: auto; */
+
+
+}
+
+.summary {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.summaryitem {
+    background: radial-gradient(rgb(74, 179, 100), rgb(18, 27, 19));
+    /* background: radial-gradient(yellow, #E6EBFE); */
+    margin: 10px;
+    padding: 10px;
+    min-width: 120px;
+    height: 120px;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formCard input {
+    display: flex;
+    /* flex-direction: column; */
+    margin: 10px;
+    padding: 15px;
+    padding-left: 20px;
+    border: 2px solid rgb(56, 54, 54);
+    color: gray;
+    border-radius: 15px;
+    /* max-width: 300px; */
+    width: 250px;
+    background-color: transparent;
+
+}
+
+
+
+.submit {
+    margin: 10px;
+    padding: 15px;
+    padding-left: 20px;
+    border: 2px solid rgb(9, 65, 60);
+    border-radius: 15px;
+    /* width: 300px; */
+    /* background-color: transparent; */
+    font-size: 1.2rem;
+    color: rgb(235, 229, 229);
+    background-color: rgb(0, 128, 92);
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 30px;
+}
+
+
+.show {
+    /* margin: 30px; */
+    margin: 5vw;
+    /* width: 80vw; */
+    background-color: #222832;
+    /* background-color: #FCF8F8; */
+
+    color: rgb(218, 214, 214);
+    /* color: black; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px black;
+    border: 1px solid rgb(86, 86, 86);
+
+    /* display: none; */
+}
+
+.show h2 {
+    /* border: 1px solid gray; */
+    color: rgb(255, 255, 255);
+    margin-bottom: 35px;
+
+}
+
+.show th {
+    /* border: 1px solid gray; */
+    color: rgb(255, 255, 255);
+
+}
+
+.table {
+    margin-bottom: 30px;
+    /* max-width: 100%; */
+    overflow: scroll;
+
+}
+
+.deletebtn {
+    padding: 4px;
+    font-size: 1.3rem;
+    border: none;
+    background-color: rgba(74, 4, 4, 0.747);
+    color: white;
+}
+
+table td,
+th {
+    padding: 5px;
+}
+
+table thead tr th {
+    text-align: start;
+}
+
+.footer {
+    /* background-color:rgb(56, 56, 59); */
+    /* background:linear-gradient(red,rgb(176, 189, 142),green); */
+
+    /* background: linear-gradient(rgb(0, 0, 0), rgb(44, 75, 2)); */
+    /* background: linear-gradient(#4D8EFF, #7AABFF); */
+    background: linear-gradient(#5d8bda, #0051e8);
+    color: white;
+    /* color: gray; */
+    /* color: black; */
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    max-width: 35vw;
+    gap: 30px;
+}
+
+.contactAddress {
+    display: flex;
+    gap: 10px;
+}
+
+.follow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon {
+    background-color: rgb(4, 94, 147);
+    color: white;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    padding: 20px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transition: 500ms ease-in;
+}
+.icon:hover {
+    background-color: rgb(4, 44, 147);
+    transform: scale(1.1);
+}
+
+@media (max-width:740px) {
+    .formCard {
+        padding: 5px;
+        margin: 2vw;
+    }
+
+    .formCard input {
+        margin: 12px;
+        padding: 10px;
+        padding-left: 15px;
+        width: 150px;
+        background-color: transparent;
+
+    }
+
+    .name {
+        width: 150px;
+    }
+
+    .login button {
+        
+        margin: 20px;
+        gap: 5px;
+        
+
+    }
+}
+
+@media (max-width:400px) {
+    .adminSchool {
+        display: none;
+    }
+
+    .buttons {
+        /* height: 100%; */
+        width: 30vw;
+    }
+    .login button {
+        margin: 10px;
+        padding: 5px 7px;
+        gap: 2px;     
+    }
+}
