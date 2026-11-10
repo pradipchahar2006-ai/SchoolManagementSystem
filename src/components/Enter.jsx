@@ -118,7 +118,7 @@ const Enter = () => {
             <div className="adminLogo">PC  </div>
             <div className="adminSchool">
               <div className="adminName">Pradeep Alok</div>
-              <div>EduCore System</div>
+              <div>schlab System</div>
             </div>
 
           </div>

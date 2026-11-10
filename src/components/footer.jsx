@@ -10,7 +10,7 @@ const footer = () => {
 
                 <div className="contactAddress">
                     <div>🗺️</div>
-                    <p> EduCore public School
+                    <p> schlab public School
                         Sector 12, Near City Park
                         Bhopal, Madhya Pradesh  462016
                         India
@@ -21,7 +21,7 @@ const footer = () => {
                     <div> 📞 +91 98765 43210</div>
                 </div>
                 <div className="contactEmail">
-                    ✉️ educore@school.edu.in
+                    ✉️ schlab@school.edu.in
                 </div>
             </div>
             <div className="follow">

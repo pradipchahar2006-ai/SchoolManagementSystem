@@ -9,8 +9,8 @@ const Navbar = (pro) => {
   return (
     <header className="nav">
       <div className="name">
-        <h2>EduCore</h2>
-        <p>School Managenment</p>
+        <h2>SchLab</h2>
+        <p>School Management</p>
       </div>
       <div className="list">
         <div onClick={() => { pro.setPage("Enter"), setActive("Enter") }} style={{ opacity: active === "Enter" ? 1 : 0.3 }} className="listEnter">Enter Detail</div>
